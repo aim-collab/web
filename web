@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrapyard  Kigali</title>
+    <style>
+        @keyframes wiggle {
+            0%, 100% {
+                transform: rotate(-2deg);
+            }
+            50% {
+                transform: rotate(2deg);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 2;
+            }
+        }
+        body {
+            font-family: 'Footlight MT Light', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: darkslategray;
+            color: white;
+            overflow-x: hidden;
+            font-size: 25px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        header {
+            background-image: url('/mnt/data/IMG_8002.png');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: yellow;
+        }
+        header p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #34495e;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #2c3e50;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        section.horizontal {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        section.horizontal .content-box {
+            flex: 1;
+            min-width: 300px;
+        }
+        .hidden {
+            display: none;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 100px;
+            background-color: white;
+            color: black;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        form label, form input, form textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        form input, form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        form button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #34495e;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #2c3e50;
+        }
+        .animated-box {
+            border: 3px dashed white;
+            padding: 15px;
+            margin: 20px 0;
+            animation: wiggle 1s infinite;
+        }
+    </style>
+    <script>
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('section');
+            pages.forEach(page => page.classList.add('hidden'));
+            document.getElementById(pageId).classList.remove('hidden');
+
+       
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Scrapyard Kigali</h1>
+        <p> Hack Club</p>
+    </header>
+
+    <section id="home" class="horizontal">
+        <div class="content-box">
+            <h2>Welcome to Scrapyard Kigali!</h2>
+            <p><span style="color: yellow;">Scrapyard</span> is a global hackathon organized by high schoolers.  <span style="color: yellow;">Scrapyard</span>  events will run in 100+ cities worldwide on the weekend of March 15th 2025. Kigali is among those cities.<br> As a result Kigali hacks with the hand of Hack club organized <br><span  style="color: yellow;">INNOTECH CHALLENGE Scrapyard</span>  event for empowering Rwandan high scholars in boosted technological innovations and inventions. It is the hackathon of 12 hours,  from 8:00 AM to 8:00 PM. Your participation is highly valuabe to us </p>
+        </div>
+        <div class="content-box">
+            <h3>Who can participate in <span style="color: yellow;">Scrapyard</span>?</h3>
+            <p>All high-school students and upper-middle-school aged students are welcome to come and participate <span style="color: yellow;">INNOTECH CHALLENGE Scrapyard</span> where they will aquire motivations and inspirations empowering there innovations in technology!<br><br> There will be no any fee charged either for entry, food and other all materials will be consumed during the hackathon.<br> You can even either be a member of the Hack Club community or be a Hack Club leader or not. You are all welcomed.</p>
+        </div>
+        <div class="content-box">
+            <h3>What do I need?</h3>
+            <p>Your laptop, chargers, and an open mind! If you plan to work on a hardware project, bring the tools you'll need.</p>
+        </div>
+        <div class="content-box">
+            <h3>What if I have more questions?</h3>
+            <p>Contact us! Feel free to reach out to us in the #scrapyard channel on the Hack Club Slack or email us at <a href="mailto:sadd@kigalihacks.live"> <span style="color: black">sadd@kigalihacks.live</span></a>.</p>
+        </div>
+        <p> For further updates and registration participation informations you may visit the event page by clicking
+            <a href="https:lu.ma/vxqvrsh9" target="_blank" style="text-decoration: none;">
+                <button style="background-color: rgba(0, 0, 139, 0.511); color: white; border: none; padding: 7px 15px; font-size: 16px; cursor: pointer; border-radius: 5px;">
+                  Join Scrapyard Event
+                </button>
+              </a>
+               </p>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 <span style="color: yellow;">Scrapyard</span> Kigali | Organized by Kigali hacks for high schoolers</p>
+    </footer>
+</body>
+</html>
